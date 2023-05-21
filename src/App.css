@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dark-theme {
+  background-color: #333;
+  color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.light-theme {
+  background-color: #fff;
+  color: #333;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.app {
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  display: block;
+}
+
+.header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.avatar {
+  display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search {
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  width: 300px;
+}
+
+.theme-toggler {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  margin-top: 20px;
+}
+
+.movie-page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  margin: 0 10px;
+  text-decoration: none;
+  color: gray;
+}
+
+.genres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.genre {
+  font-size: 20px;
+  padding: 0;
+  margin: 10px;
+}
+
+.genre a {
+  margin: 0px;
 }
